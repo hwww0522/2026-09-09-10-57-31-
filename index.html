@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="h096sAb5ojzxQhGhpvo2mb">
+<head data-page-node-id="k1EnKjUCRDjCZxBR9oK09y">
+<meta charset="UTF-8" data-page-node-id="4CZOfZvN6Cn7bEH2fJXB6n">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="lKpi1HlkdX7S1XmUhJW2k8">
+<title>AI 行业日报看板</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page-node-id="6V8hdXVl5EQ0sM09niaHSP">
+  <div class="topline" data-page-node-id="TstTy1qiMbJTWDZJJX7vfZ"></div>
+  <div class="bg" data-page-node-id="yrKlCdiuHfLlK5F4LDRuIe"></div>
+
+  <div class="page" data-page-node-id="mTXLuAitwp8ThlOqRoN4av">
+    <!-- 1. 顶部标题栏 -->
+    <header class="topbar" data-page-node-id="aYUUXXccQ7yshOGeHVBax9">
+      <div class="brand" data-page-node-id="Yv7UdOBf5eOQiLkkzMjo3U">
+        <div class="brand-main" data-page-node-id="Ry7EiWFjgr3PxkABOMbXRS">
+          <h1 data-page-node-id="DRGP7m0P74spKGTrPBEBUt">AI 行业日报</h1>
+          <span class="live" data-page-node-id="I9s4ABpE3UACuhl1mWhMwB">LIVE</span>
+        </div>
+        <div class="subtitle" data-page-node-id="3z1X1pVCtrFE3aXcHpyEnH">⚡ 5分钟看懂今天AI圈发生了什么</div>
+      </div>
+      <div class="datebox" data-page-node-id="D5eEVwCnJuSIkjXf9BScFd">
+        <div class="cap" data-page-node-id="DxdpG46dXkaBZf4EBU8Kqd">Daily Briefing</div>
+        <div class="date" data-page-node-id="lSn8GCY0DW0P7nYBeHWAXn"><span id="today" data-page-node-id="jzASzpY4V2yBIonvn8oFxI"></span><em id="weekday" data-page-node-id="vd5uLQJzfnRYi8SkHtgE4v"></em></div>
+        <div class="clock" id="clock">实时 --:--:--</div>
+      </div>
+    </header>
+
+    <!-- 2. 今日重点摘要 -->
+    <section class="banner io" data-page-node-id="PJp0uGSlfvMp7Jn6SF7Kmb">
+      <div class="b-label" data-page-node-id="4tXYeRcEIHAl5w6R5mzQ4i">
+        <b data-page-node-id="hMvksWM2dwHyY4yub4DUWE">今日</b>
+        <span data-page-node-id="9LmOZtagZYRRDwWM8AakbU">FOCUS</span>
+      </div>
+      <div class="b-text" data-page-node-id="4uiqD7gst5vwOCCMD3nVac">
+        OpenAI 发布新一代模型<i data-page-node-id="tJVVPWngTe3WeGudQPiALQ">·</i>算力政策调整<i data-page-node-id="X5TzRZPR5jWspCeNg14aIr">·</i>安全峰会召开
+      </div>
+    </section>
+
+    <!-- 2.5 速览统计条 -->
+    <section class="stats-strip io" aria-label="今日速览">
+      <div class="stat">
+        <div class="s-num">3<em>条</em></div>
+        <div class="s-cap">收录新闻</div>
+      </div>
+      <div class="stat">
+        <div class="s-num">5<em>个</em></div>
+        <div class="s-cap">趋势关键词</div>
+      </div>
+      <div class="stat">
+        <div class="s-num"><span id="statDone">0</span><em>/3</em></div>
+        <div class="s-cap">今日已读</div>
+      </div>
+      <div class="stat">
+        <div class="s-num">08:45</div>
+        <div class="s-cap">数据更新</div>
+      </div>
+    </section>
+
+    <!-- 3 + 4. 新闻列表（左）与 今日趋势（右） -->
+    <div class="grid2" data-page-node-id="9xFkFKtFYTUWAQq3Q98SyE">
+      <div class="col" data-page-node-id="jbtEtKAkUXV2Z5tbVcoe5W">
+        <div class="pane-title" data-page-node-id="eCTJxIzeiOYaaPkUwWFTZ1">
+          <span class="dot" data-page-node-id="77WLRHGkRB5H8AmWkErICz"></span>
+          <h2 data-page-node-id="3Ge9sgguXGcm842J2tqKYR">今日要闻<small data-page-node-id="9wQDZEvnDFvrFKkx7M7bcK">TOP NEWS</small></h2>
+          <span class="extra" data-page-node-id="aSBBDVY6SzyrMyhoa0C5sJ">共 3 条 · <span id="doneCount" data-page-node-id="Ozym3sAG2Ep9ZRyQr3RqQB">0</span>/3 已读</span>
+        </div>
+
+        <!-- 阅读进度条：与 Toggle 状态联动 -->
+        <div class="read-progress" aria-hidden="true">
+          <span class="rp-track"><span class="rp-fill" id="readFill"></span></span>
+          <span class="rp-label" id="readPct">0%</span>
+        </div>
+
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" type="button" data-filter="all">全部</button>
+          <button class="filter-btn" type="button" data-filter="high">高优先级</button>
+          <button class="filter-btn" type="button" data-filter="medium">中优先级</button>
+        </div>
+
+        <div class="news-list" data-page-node-id="zHAGeRGtA36RuGv947kN7W">
+          <!-- 新闻卡片 1 -->
+          <article class="card card-priority-1" data-priority="high" data-completed="false" data-page-node-id="lDx5HowbJ2F1GTmy2gko5e">
+            <div class="card-top" data-page-node-id="lv8vw6Bv0lIxZPndmR8DpG">
+              <span class="tag hi" data-page-node-id="hWFTDCafWcw5bETFSSgc5X">高</span>
+              <span class="c-time" data-page-node-id="VqmbHFe3WZX6FY4AUztzff">09:12 · 模型发布</span>
+            </div>
+            <h3 data-page-node-id="VptFD38FP2gJxKcwu6dnHD">OpenAI 发布新一代多模态模型，复杂推理与长上下文能力刷新纪录</h3>
+            <p data-page-node-id="bh1GvqG8fqotEzknYBrfDQ">新旗舰在多项评测基准中表现亮眼，开发者 API 已开启灰度申请，调用价格同步下调约三成。</p>
+            <div class="card-bottom" data-page-node-id="E46hCKEF4254QfD0J52Azr">
+              <span class="src-chip">来源 <b>机器之心</b> · 约 4 分钟</span>
+              <button class="done-btn" type="button" data-page-node-id="XVoA2tUoOKBCRoteZxocHE">阅读完成</button>
+            </div>
+          </article>
+
+          <!-- 新闻卡片 2 -->
+          <article class="card card-priority-2" data-priority="medium" data-completed="false" data-page-node-id="qc1OYlF2evuajn6duwgP5h">
+            <div class="card-top" data-page-node-id="AVUqRZS6swS1pS7RPOHHBe">
+              <span class="tag mid" data-page-node-id="2ynPHa7NHgfB9iovDM0hZl">中</span>
+              <span class="c-time" data-page-node-id="yi9QLl5DzDf562FBsYS1Hj">10:30 · 产业政策</span>
+            </div>
+            <h3 data-page-node-id="Z9iHF4PLB44YsKcSUrGwzt">多部门联合发文：加快智算中心建设，对中小模型厂商发放算力券补贴</h3>
+            <p data-page-node-id="y00h5gdKaoHUrUou9DRb9i">政策聚焦国产算力集群与推理成本下降，多家云厂商已公布新一轮 GPU 扩容与降价计划。</p>
+            <div class="card-bottom" data-page-node-id="2Rpi2wazuc9aOYZEHWs4lV">
+              <span class="src-chip">来源 <b>36氪</b> · 约 3 分钟</span>
+              <button class="done-btn" type="button" data-page-node-id="0x82yX7jys0Bgwm6CUg7in">阅读完成</button>
+            </div>
+          </article>
+
+          <!-- 新闻卡片 3 -->
+          <article class="card card-priority-3" data-priority="low" data-completed="false" data-page-node-id="Ff4P2tGybh2qeNIUOL1Qng">
+            <div class="card-top" data-page-node-id="ITPGkdQRPKTqNDcRlEAIOS">
+              <span class="tag low" data-page-node-id="zdYSyo4U40Uk9pUJmxNzX1">低</span>
+              <span class="c-time" data-page-node-id="VEQBi38PkxAkSBjAEo1149">08:45 · 安全治理</span>
+            </div>
+            <h3 data-page-node-id="hYmRQZInRwB2fN9CYdkNpx">国际 AI 安全峰会闭幕，各方就模型风险披露框架达成初步共识</h3>
+            <p data-page-node-id="DNeBCmDwSz3ITnoTNqIkzm">会议同意建立可互操作的模型评测与红队测试标准，具体实施细则预计下一季度落地。</p>
+            <div class="card-bottom" data-page-node-id="wf4DBdJohGmHRtu4rhyIl3">
+              <span class="src-chip">来源 <b>量子位</b> · 约 2 分钟</span>
+              <button class="done-btn" type="button" data-page-node-id="oGXSqZDQ0QzAqlNYXGn6qN">阅读完成</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- 今日趋势面板 -->
+      <div class="col" data-page-node-id="86D2peIxgjLRyrBcGVBdKw">
+        <div class="pane-title" data-page-node-id="RTfYYFBCYF18L8rAnLDvDD">
+          <span class="dot" data-page-node-id="OB6XFjZrFvVNyLSFTVUMt7"></span>
+          <h2 data-page-node-id="sDn8MLNZbU2XQ3ddI2Fwm0">今日趋势<small data-page-node-id="5dcUAfTEGvMZFzMhhRZUYt">TRENDS</small></h2>
+          <span class="extra" data-page-node-id="4HHAE1BEMHLKMG76NwDX8e">较昨日热度</span>
+        </div>
+
+        <aside class="trend-panel io" data-page-node-id="0I0OzI4Fuk8z4ooSeVuuEy">
+          <div class="trend-head" data-page-node-id="2lPDjzCr8Nuve8kdIPiGl8">
+            <span class="dot" data-page-node-id="cuEf7HnPXCRlWQ8OAkVdUD"></span>
+            <b data-page-node-id="78EDN4uARjb7xusjpTECSJ">关键词热度榜</b>
+            <small data-page-node-id="LGWGqFMpWR2Cs6c6dh4kkk"><em data-page-node-id="CzHwdHIT2aGOuXRNaxKxje">▲ 涨</em><i data-page-node-id="a6mcDDEpffl7SSQ1e7WGTO">▼ 跌</i></small>
+          </div>
+
+          <div class="trend-list" data-page-node-id="yLuoPhP4vWkssGiA8gGLIG">
+            <div class="trow up" data-page-node-id="wOnZogveGMfRf2ae5OoqVy">
+              <span class="rk" data-page-node-id="6MdROCGPLLhBq9cAi3QTsg">01</span>
+              <span class="kw" data-page-node-id="F04QcjA3RapKSpNfxMNCoB">多模态 AI</span>
+              <span class="delta up" data-page-node-id="As5UPVmXYDiAb2auYEdPA8"><span class="arr" data-page-node-id="utta6TspwTpemgPApzEVr9">▲</span><span class="num" data-v="12.4" data-page-node-id="0GTyqPkThMCneeAEAYU1o5">+0.0</span>%</span>
+              <span class="bar" data-page-node-id="fQ8QsnUp3XNQDbMMQZ4BIs"><i data-w="83" data-page-node-id="4ehoH9dsSM3OGcFGivsggq"></i></span>
+            </div>
+            <div class="trow up" data-page-node-id="yNtUHdmYbODri9FfLjujsS">
+              <span class="rk" data-page-node-id="Q2X30rV0NzT3AEpwqJbFdq">02</span>
+              <span class="kw" data-page-node-id="WebQEUpHjiX8A3CdE5EvqK">Agent 智能体</span>
+              <span class="delta up" data-page-node-id="vVexGdrdJbEEhBr2tbwUcx"><span class="arr" data-page-node-id="cPNm0UDGSzewFjTHFp6BS2">▲</span><span class="num" data-v="9.8" data-page-node-id="c60qd2iKF97x58ZArQTjAw">+0.0</span>%</span>
+              <span class="bar" data-page-node-id="K8i7S0PyVmjstT86pTuXO"><i data-w="65" data-page-node-id="sIuj6IoE66w5hz3iqgNOCd"></i></span>
+            </div>
+            <div class="trow up" data-page-node-id="fnUl07RIA2Ylb8FrDisug2">
+              <span class="rk" data-page-node-id="LZF5fykd32cXEFYmwxBNTi">03</span>
+              <span class="kw" data-page-node-id="ksuclqG8iduBMP4FvdHSkj">具身智能</span>
+              <span class="delta up" data-page-node-id="fFJhkKELGKbfCtr5AgQfrl"><span class="arr" data-page-node-id="uG0SQCjJyqk72Z4jotnCEU">▲</span><span class="num" data-v="6.2" data-page-node-id="ZytqtEgyxWxM9gK4MCbAWp">+0.0</span>%</span>
+              <span class="bar" data-page-node-id="P9NLGK6h2l00ElqsURguRK"><i data-w="41" data-page-node-id="57f05ujRAKXe5VzPF7CtHs"></i></span>
+            </div>
+            <div class="trow down" data-page-node-id="FhJI0FN3KtGAUFqOJp843n">
+              <span class="rk" data-page-node-id="x3Cy2ZCzINCPByV7TWERna">04</span>
+              <span class="kw" data-page-node-id="UDlPzk42oknhhFCRAod5OX">端侧大模型</span>
+              <span class="delta down" data-page-node-id="vaaCR0tkDmgDxHvXBPjzYs"><span class="arr" data-page-node-id="OEhlSMYIk29la5ZDcnojum">▼</span><span class="num" data-v="3.4" data-page-node-id="WjxFLN6E7vj8o5NS5UtVMg">+0.0</span>%</span>
+              <span class="bar" data-page-node-id="W2nfawgC7YQdVunGEfpeAh"><i data-w="23" data-page-node-id="hIVgkbShm9j8ntYFNJNDr5"></i></span>
+            </div>
+            <div class="trow down" data-page-node-id="20Do0EG080enFIkKW5Y1WF">
+              <span class="rk" data-page-node-id="JrmkV7EddiSgHBPNuHA2jg">05</span>
+              <span class="kw" data-page-node-id="2k4HibbQx89BpZcmDviIkt">AI 视频生成</span>
+              <span class="delta down" data-page-node-id="TaQVBGJPWdFWlpdDgQFY98"><span class="arr" data-page-node-id="ZHW3AQ91xGKOVPIXeNyM6N">▼</span><span class="num" data-v="1.8" data-page-node-id="2qX21eI0A4DNKGVnPByS2e">+0.0</span>%</span>
+              <span class="bar" data-page-node-id="MiFgpk3BhdpUiSLJLxp1gm"><i data-w="12" data-page-node-id="KsYnt6Qn85QscTpHCEARKq"></i></span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="foot io" data-page-node-id="9yAF3juMzwA8PzEXLSTDK4">AI 行业日报看板 · <b data-page-node-id="Mh9NeEjYIUdtG10PA19e5h">INDEX.HTML</b> · 本地静态演示，新闻与趋势数据为示例文案</div>
+  </div>
+
+  <button class="backtop" id="backtop" type="button" aria-label="回到顶部">↑</button>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
